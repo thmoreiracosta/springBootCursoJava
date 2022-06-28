@@ -1,0 +1,24 @@
+package entities;
+
+public class grossSalary {
+	
+	public String name;
+	public double grossSalary;
+	public double imposto;
+	
+	public double netSalary() {
+		return grossSalary - imposto;
+	}
+	
+	public void increaseSalary(double percentage, double novoSalario) {
+		percentage = percentage / 100;
+		novoSalario = grossSalary + (percentage * grossSalary);
+	}
+	
+	public String toString() {
+		return name
+				+ ", $ "
+				+ String.format("%.2f", netSalary());				
+	}
+
+}

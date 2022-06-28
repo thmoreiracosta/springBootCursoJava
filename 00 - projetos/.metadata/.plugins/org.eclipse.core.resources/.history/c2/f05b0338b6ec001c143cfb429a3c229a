@@ -1,0 +1,30 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio_01 {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double largura = sc.nextDouble();
+		double comprimento = sc.nextDouble();
+		double valorMetroQuadrado = sc.nextDouble();
+		
+		double area = largura * comprimento;
+		double precoTerreno = area * valorMetroQuadrado;
+		
+		System.out.println("ÁREA = " + area);
+		System.out.println("PRECO = " + precoTerreno);
+		
+		sc.close();
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class exercicio_04 {
+	public static void main(String[] args) {
+
+		// Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do
+		// jogo, sabendo que o mesmo pode
+		// começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e
+		// máxima de 24 horas.
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entre com a hora inicial e final do jogo separados por espaco: ");
+		int inicio = sc.nextInt();
+		int fim = sc.nextInt();
+
+		if (inicio < fim) {
+			int result = fim - inicio;
+			System.out.println("O JOGO DUROU " + result + " HORA(S)");
+		} else if (inicio > fim) {
+			int a = 24 - inicio;
+			int result = a + fim;
+			System.out.println("O JOGO DUROU " + result + " HORA(S)");
+		} else if (inicio == fim) {
+			System.out.println("O JOGO DUROU 24 HORA(S)");
+		} else if (inicio > 24 || fim > 24){
+			System.out.println("HORARIO INVALIDO. DIA COM 24 HORAS.");
+			
+		}
+		sc.close();
+
+	}
+}

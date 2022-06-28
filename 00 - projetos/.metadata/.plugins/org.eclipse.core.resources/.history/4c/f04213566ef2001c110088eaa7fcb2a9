@@ -1,0 +1,25 @@
+package estruturasRepetitivas;
+
+import java.util.Scanner;
+
+public class forExercicio_01 {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entre com um número inteiro entre 1 e 1000: ");
+		int X = sc.nextInt();
+
+		if (X < 1 || X > 1000) {
+			System.out.println("Entre com intervalo de número correspondente: ");
+			X = sc.nextInt();
+		} else {
+			for (int i = 1; i <= X; i++) {
+				if ((X % 2) == 1) {
+					System.out.println(X);
+				}
+			}
+		}
+		sc.close();
+	}
+}

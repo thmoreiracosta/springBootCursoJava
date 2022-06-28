@@ -1,0 +1,22 @@
+package entities;
+
+public class studentGrade {
+	
+	public String name;
+	public double grade1;
+	public double grade2;
+	public double grade3;	
+	
+	public double sumGrades() {
+		return grade1 + grade2 + grade3;
+	}
+	
+	public double passOrFail() {
+		if (sumGrades() < 60.0) {
+			return 60.0 - sumGrades();
+		} 
+		else {
+			return 0.0;
+		}		
+	}
+}

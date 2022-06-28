@@ -1,0 +1,13 @@
+package entities;
+
+public class studentGrade {
+	
+	public String name;
+	public double nate1;
+	public double nate1;
+	public double nate1;
+	
+	
+	
+
+}

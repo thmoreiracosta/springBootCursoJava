@@ -1,0 +1,12 @@
+package util;
+
+public class moneyCambio {
+	
+	public static double calcDolarReal(double precoDolar, double compDolar) {
+		return precoDolar * compDolar * 6.0 / 100.0;
+	}
+	
+	
+	
+
+}

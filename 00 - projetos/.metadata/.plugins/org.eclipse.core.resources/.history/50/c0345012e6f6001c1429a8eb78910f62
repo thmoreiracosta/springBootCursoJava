@@ -1,0 +1,22 @@
+package entities;
+
+public class studentGrade {
+	
+	public String name;
+	public double nate1;
+	public double nate2;
+	public double nate3;
+	public double sumNates;
+	
+	public double sumNates() {
+		return sumNates = nate1 + nate2 + nate3;
+	}
+	
+	public void passOrFail() {
+		sumNates += sumNates * 60.0 / 100.0;
+	}
+	
+	
+	
+
+}

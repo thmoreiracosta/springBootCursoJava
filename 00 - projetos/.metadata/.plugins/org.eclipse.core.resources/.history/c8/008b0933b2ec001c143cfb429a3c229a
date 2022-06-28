@@ -1,0 +1,180 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+//		double x = 10.35784;
+//		
+//		String name = "Maria";
+//		int age = 31;
+//		double renda = 4000.0;		
+//		
+//		
+//		System.out.println(x);
+//		System.out.printf("%.2f%n", x);
+//		Locale.setDefault(Locale.US);
+//		System.out.printf("%.2f%n", x);
+//		System.out.println("RESULTADO = " + x + " xMETROS");
+//		System.out.printf("RESULTADO = %.2f metros%n", x);
+//		
+//		System.out.printf("%s tem %d anos e ganha R$ %.2f reais%n", name, age, renda);
+
+//		String product1 = "Computer";
+//		String product2 = "Office desk";
+//		int age = 30;
+//		int code = 5290;
+//		char gender = 'F';
+//		double price1 = 2100.0;
+//		double price2 = 650.50;
+//		double measure = 53.234567;
+//		
+//		System.out.println("Products: ");
+//		System.out.printf("%s, which price is $ %.2f.%n", product1, price1);
+//		System.out.printf("%s, which price is $ %.2f.%n", product2, price2);
+//		System.out.println();
+//		System.out.printf("Record: %d years old, code %d and gender: %s.%n", age, code, gender);
+//		System.out.println();
+//		System.out.printf("Measue with eight decimal places: %.8f.%n", measure);
+//		System.out.printf("Rouded (three decimal places): %.3f.%n", measure);
+//		Locale.setDefault(Locale.US);
+//		System.out.printf("US decimal point: %.3f.%n", measure);
+//		
+//		int x; 
+//		double y;
+//		
+//		x = 5;
+//		y = 2 * x;
+//		
+//		System.out.println(x);
+//		System.out.println(y);
+//		
+//		
+//		 
+//		double b, B, h, area;
+//		
+//		 b = 6.5;
+//		 B = 8.7;
+//		 h = 5.9;
+//		 
+//		 area = (b + B) / 2.0 * h;
+//		 		
+//		System.out.println(area);
+//		
+//		
+//		int a, c;
+//		double resultado;
+//		
+//		a = 5; 
+//		c = 2;
+//		 
+//		 
+//		 resultado = (double) a / c;
+//		 		
+//		System.out.println(resultado);
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+//		String x;
+//		System.out.println("Entre com seu nome: ");
+//		x = sc.next();
+//		System.out.println("Seja bem-vindo(a), " + x + ".");
+
+		
+		
+		////**** NÚMERO PAR ****
+		
+//		int x;
+//		double result;
+//		System.out.println("Digite um número inteiro: ");
+//		x = sc.nextInt();
+//		result = (double) x % 2;
+//
+//		if (result == 1) {
+//			System.out.println("O número " + x + " não é par!");
+//
+//		} else {
+//			System.out.println("O número " + x + " é par!");
+//		}
+		
+		//**** NÚMERO PRIMO ****
+//		int x;
+//		double r1, r2, r3;
+//		System.out.println("Digite um número inteiro: ");
+//		x = sc.nextInt();
+//		r1 = (double) x / 1;
+//		r2 = (double) x / x;
+//		r3 = (double) x % 2;
+//
+//		if (r1 == x && r2 == 1 && r3 != 0) {
+//			System.out.println("O número " + x + " é primo!");
+//
+//		} else {
+//			System.out.println("O número " + x + " não é primo!");
+//		}
+		
+		
+		//*** NÚMERO COM PONTO FLUTUANTE ***		
+//		double x;
+//		x = sc.nextDouble();
+//		System.out.printf("Você digitou: %.2f%n", x);
+		
+		
+		
+//		//*** NÚMERO TIPO CHAR ***		
+//				char x;
+//				x = sc.next().charAt(0);
+//				System.out.println("Você digitou: " + x);
+
+				
+		//*** NÚMEROS ENTRADA MESMA LINHA ***		
+//				String x;
+//				int y;
+//				double z;			
+//	
+//				x = sc.next();
+//				y = sc.nextInt();
+//				z = sc.nextDouble();				
+//				
+//				System.out.println("Dados digitados:");
+//				System.out.println("Nome: " + x);
+//				System.out.println("idade: " + y);
+//				System.out.println("altura: " + z);
+		
+//		//*** LER ATÉ QUEBRA DE LINHA ***		
+//		String s1, s2, s3;
+//					-
+//
+//		s1 = sc.nextLine();
+//		s2 = sc.nextLine();
+//		s3 = sc.nextLine();				
+//		
+//		System.out.println("Dados digitados:");
+//		System.out.println(s1 + " " + s2 + " " + s3);
+		
+		
+		
+		//*** QUEBRA DE LINHA PENDENTE ***		
+				int x;
+				String s1, s2, s3;
+							
+				x = sc.nextInt();
+				sc.nextLine();				
+				s1 = sc.nextLine();
+				s2 = sc.nextLine();
+				s3 = sc.nextLine();				
+				
+				System.out.println("Dados digitados:");
+				System.out.println(x);
+				System.out.println(s1);
+				System.out.println(s2);
+				System.out.println(s3);
+		
+
+		sc.close();
+
+	}
+
+}

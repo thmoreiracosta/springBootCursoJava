@@ -1,0 +1,38 @@
+package estruturasRepetitivas;
+
+import java.util.Scanner;
+
+public class forExercicio_02 {
+	public static void main(String[] args) {
+
+		// Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X
+		// que serão lidos em seguida.
+		// Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos
+		// estão fora do intervalo, mostrando
+		// essas informações conforme exemplo (use a palavra "in" para dentro do
+		// intervalo, e "out" para fora do intervalo).
+
+		Scanner sc = new Scanner(System.in);
+		
+		int N = sc.nextInt();
+		int number = 0;
+		int countIn = 0;
+		int countOut = 0;
+		
+		for (int i = 1; i <= N; i++) {
+			number = sc.nextInt();
+			if (number <= 20 && number >= 10) {
+				countIn++;
+								
+			} else {
+				countOut++;				
+			}
+		}
+		
+		System.out.println(countIn + " in");
+		System.out.println(countOut + " out");
+		
+		sc.close();
+		
+	}
+}

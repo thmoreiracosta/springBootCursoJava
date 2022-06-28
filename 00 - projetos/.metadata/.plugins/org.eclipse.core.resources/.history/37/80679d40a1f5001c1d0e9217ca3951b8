@@ -1,0 +1,29 @@
+package estruturasRepetitivas;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class forExercicio_03 {
+	public static void main(String[] args) {		
+	
+	
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		int N = sc.nextInt();
+		double a, b, c;
+		
+		for (int i = 1; i <= N; i++) {
+			a = sc.nextDouble();
+			b = sc.nextDouble();
+			c = sc.nextDouble();
+			
+			//double mediaPonderada = (((a*2) + (b*3) + (c*5))/ 2+3+5);
+			
+		}		
+		
+		sc.close();	
+
+	}
+
+}

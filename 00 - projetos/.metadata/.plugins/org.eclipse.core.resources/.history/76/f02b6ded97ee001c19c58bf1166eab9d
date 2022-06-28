@@ -1,0 +1,39 @@
+package estruturaCondicional;
+
+import java.util.Scanner;
+
+public class exercicio_03 {
+	public static void main(String[] args) {
+
+		// Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem
+		// "Sao Multiplos" ou "Nao sao
+		// Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os
+		// números devem poder ser digitados em
+		// ordem crescente ou decrescente.
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Entre com o 1º número inteiro: ");
+		int A = sc.nextInt();
+
+		System.out.println("Entre com o 2º número inteiro: ");
+		int B = sc.nextInt();
+
+		if (A > B) {
+			if (A % B == 0) {
+				System.out.println(A + " e " + B + " sao Multiplos entre si.");
+			} else {
+				System.out.println(A + " e " + B + " nao sao Multiplos entre si.");
+			}
+		} else {
+			if (A < B) {
+				if (B % A == 0) {
+					System.out.println(A + " e " + B + " sao Multiplos entre si.");
+				} else {
+					System.out.println(A + " e " + B + " nao sao Multiplos entre si.");
+				}
+			}
+		}
+		sc.close();
+	}
+}

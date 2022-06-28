@@ -1,0 +1,36 @@
+package estruturaCondicional;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exercicio_05 {
+	public static void main(String[] args) {
+
+		//Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A 
+		//seguir, calcule e mostre o valor da conta a pagar.		
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		int cod = sc.nextInt();
+		double qtd = sc.nextDouble();
+		double total = 0;
+		
+		if (cod == 1) {
+			total = qtd * 4.00;			
+		} else if (cod == 2){
+			total = qtd * 4.50;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		sc.close();	
+		
+		
+	}
+}
